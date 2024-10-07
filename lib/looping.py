@@ -1,13 +1,24 @@
 #!/usr/bin/env python3
 
 def happy_new_year():
-    # code goes here!
-    pass
+    counter = 10
+    while counter > 0:
+        print(counter)
+        counter -= 1
+    print("Happy New Year!")
 
 def square_integers(int_list):
-    # code goes here!
-    pass
+    return [element ** 2 for element in int_list]
 
 def fizzbuzz():
-    # code goes here!
-    pass
+    counter = 1
+    while(counter <= 100):
+        if counter % 3 == 0 and counter % 5 == 0:
+            print("FizzBuzz")
+        elif counter % 3 == 0:
+            print("Fizz")
+        elif counter % 5 == 0:
+            print("Buzz")
+        else:
+            print(counter)
+        counter += 1
